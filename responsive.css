@@ -1,5 +1,5 @@
 /* CSS for tablet devices */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   header.container {
     margin-bottom: 8px;
     padding: 6px 4rem 2px 3rem;
@@ -114,7 +114,7 @@
 }
 
 /* CSS for mobile devices */
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 750px) {
     header.container{
         height: 4rem;
     }
