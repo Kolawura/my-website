@@ -147,6 +147,9 @@
   .social-media a:hover {
     font-size: 1.1rem;
   }
+  .wrapper .static-text{
+    font-size: 45px;
+  }
 
   .about-text h1,
   #Service h2,
