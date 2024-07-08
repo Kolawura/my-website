@@ -191,6 +191,7 @@
   #footer {
     justify-content: space-between;
     padding: 1rem 2rem;
+    width: 100%;
   }
   #footer .footer-sub input {
     height: 1.3rem;
