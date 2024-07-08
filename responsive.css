@@ -1,0 +1,223 @@
+/* CSS for tablet devices */
+@media screen and (max-width: 900px) {
+  header.container {
+    margin-bottom: 8px;
+    padding: 6px 4rem 2px 3rem;
+  }
+  .navbar {
+    margin-bottom: 5px;
+    padding: 5px 1.5rem 2px 1.5rem;
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+    margin: auto auto auto 10px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    justify-content: space-between;
+  }
+  .navbar a.dark,
+  .navbar a.light,
+  .navbar a.menu{
+    font-size: 2rem;
+  }
+
+
+  section {
+    max-height: fit-content;
+    padding: 8rem 3rem 4rem;
+    justify-content: space-between;
+  }
+  .about-text h1,
+  #Service h2,
+  #Project h2,
+  #Contact h2 {
+    font-size: 3rem;
+  }
+  #Home {
+    padding-bottom: 6rem;
+    flex-direction: column;
+  }
+  .home-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .home-text h3 {
+    font-size: 2.2rem;
+  }
+  .home img {
+    height: 400px;
+    position: relative;
+    top: 0;
+    border-radius: 50%;
+    animation: jump 2s steps(4) infinite;
+    margin: 0 3rem;
+  }
+  .social-media {
+    margin-top: 2rem;
+  }
+
+  section#About {
+    padding-top: 6rem;
+    flex-direction: column;
+  }
+  .about-text {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding-left: 0;
+  }
+  p.about {
+    margin: 2rem 0;
+  }
+
+  .abt-btn {
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    width: 10rem;
+  }
+  .bgtxt {
+    font-size: 6rem;
+  }
+  #service {
+    padding: 5% 0;
+  }
+
+  .service-box {
+    flex-direction: column;
+    padding: 1%;
+  }
+
+  .service-box .service {
+    width: 90%;
+  }
+
+  .contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .contact-form form .form {
+    width: 70vw;
+  }
+  .contact-form form .submit {
+    width: 35vw;
+  }
+  #footer {
+    padding: 3rem 6rem;
+  }
+  #footer .footer-sub input.submit {
+    padding: 0.5rem 0.8rem;
+    width: 6rem;
+  }
+}
+
+/* CSS for mobile devices */
+@media screen and (max-width: 460px) {
+    header.container{
+        height: 4rem;
+    }
+  .navbar {
+    margin-bottom: 10px;
+    padding: 5px 1.5rem 2px 1.5rem;
+  }
+  nav.navbar {
+    margin: 10px;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
+  .menuBar {
+    display: none;
+  }
+  .navbar a.menu{
+    display: block;
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+ 
+  section {
+    padding: 6rem 1rem 2rem;
+  }
+
+  .social-media a {
+    font-size: 1rem;
+  }
+  .social-media a:hover {
+    font-size: 1.1rem;
+  }
+
+  .about-text h1,
+  #Service h2,
+  #Project h2,
+  #Contact h2 {
+    font-size: 2.5rem;
+  }
+  section#Home {
+    padding: 8rem 2rem 4rem;
+  }
+  .bgtxt {
+    font-size: 4rem;
+  }
+  .home img {
+    height: 300px;
+    position: relative;
+    top: 0;
+    border-radius: 50%;
+    margin: 0 3rem;
+  }
+  .abt-btn {
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    width: 10rem;
+  }
+
+  iframe {
+    border: none;
+    height: 10rem;
+    width: 20rem;
+    border-radius: 0.8rem;
+  }
+
+  .contact-form form .form {
+    width: 80vw;
+  }
+  .contact-form form .submit {
+    font-size: 1rem;
+    padding: 0.8rem 1.8rem;
+    width: 30vw;
+  }
+  #footer {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  #footer .footer-sub input {
+    height: 1.3rem;
+    width: 45vw;
+    text-align: center;
+    margin: 1rem 0.8rem;
+  }
+  #footer .footer-sub input.submit {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.6rem;
+    width: 5rem;
+  }
+  #footer .footer-contact .social-media a {
+    font-size: 1rem;
+  }
+  #footer .footer-contact .social-media a:hover{
+    font-size: 1.1rem;
+  }
+
+  #footer .links {
+    display: none;
+    height: 0;
+  }
+  #footer .footer-sub {
+    font-size: 1rem;
+  }
+  #footer .footer-contact p {
+    font-size: 1rem;
+  }
+}
