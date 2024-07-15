@@ -4,11 +4,14 @@
     margin-bottom: 8px;
     padding: 6px 4rem 2px 3rem;
   }
-  .navbar {
+  /* .navbar {
     margin-bottom: 5px;
     padding: 5px 1.5rem 2px 1.5rem;
+  } */
+  .navbar .navIcon {
+    display: flex;
+    justify-content: center;
   }
-
   .navbar a {
     font-size: 1.2rem;
     margin: auto auto auto 10px;
@@ -16,12 +19,11 @@
     transition: 0.5s ease;
     justify-content: space-between;
   }
-  .navbar a.dark,
-  .navbar a.light,
-  .navbar a.menu{
+  .navbar div a.dark,
+  .navbar div a.light,
+  .navbar div a.menuBar {
     font-size: 2rem;
   }
-
 
   section {
     max-height: fit-content;
@@ -115,28 +117,53 @@
 
 /* CSS for mobile devices */
 @media screen and (max-width: 750px) {
-    header.container{
-        height: 4rem;
-    }
+  header.container {
+    padding: 0;
+    height: 4rem;
+  }
   .navbar {
     margin-bottom: 10px;
     padding: 5px 1.5rem 2px 1.5rem;
   }
   nav.navbar {
-    margin: 10px;
+    min-width: 100%;
     padding-right: 0px;
     margin-right: 0px;
   }
-
-  .menuBar {
+  .navbar .navbar{
+    padding: 1rem 0;
+    margin: 0;
+  }
+  .navbar h1{
+    margin-left: 4rem;
+  }
+  .navbar .navIcon {
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+  #menu {
     display: none;
   }
-  .navbar a.menu{
+  #menu.displayMenu {
+    margin-top: .7rem;
+    padding: 1rem 4rem;
+    background-color: var(--footer-color);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 100%;
+    gap: 1rem;
+  }
+  #menu.displayMenu a{
+    margin-left: 0;
+  }
+  .navbar div a.menuBar {
     display: block;
     margin-left: 2rem;
     margin-right: 0;
   }
- 
+
   section {
     padding: 6rem 1rem 2rem;
   }
@@ -147,7 +174,7 @@
   .social-media a:hover {
     font-size: 1.1rem;
   }
-  .wrapper .static-text{
+  .wrapper .static-text {
     font-size: 45px;
   }
 
@@ -210,7 +237,7 @@
   #footer .footer-contact .social-media a {
     font-size: 1rem;
   }
-  #footer .footer-contact .social-media a:hover{
+  #footer .footer-contact .social-media a:hover {
     font-size: 1.1rem;
   }
 

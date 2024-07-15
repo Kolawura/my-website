@@ -7,7 +7,8 @@ const Project = document.querySelector(".Project");
 const Contact = document.querySelector(".Contact");
 const LightMode = document.querySelector(".light");
 const DarkMode = document.querySelector(".dark");
-const MenuBar = document.querySelector(".menu");
+const MenuBar = document.querySelector(".menuBar");
+const Menu = document.querySelector("#menu")
 
 const time = new Date();
 if (time.getHours() < 19 && time.getHours() >= 7) {
@@ -46,11 +47,18 @@ const updateButtons = () => {
 
 updateButtons();
 
-for (i = 0; i > projectElements.length; i++) {
-  projectElements.querySelector("a").addEventListener("click", function () {
-    window.location.href = this.getAttribute("href");
-  });
-}
+// for (i = 0; i > projectElements.length; i++) {
+//   projectElements.querySelector("a").addEventListener("click", function () {
+//     window.location.href = this.getAttribute("href");
+//   });
+// }
+
+MenuBar.addEventListener("click", (e)=>{
+  e.preventDefault();
+
+  Menu.classList.toggle('displayMenu');
+})
+
 
 window.onscroll = function () {
   var top = window.scrollY;
