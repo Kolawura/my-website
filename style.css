@@ -183,7 +183,7 @@ hr {
 /* ALL SECTIONS STYLE */
 section {
   min-height: 100vh;
-  padding: 10rem 6rem 2rem;
+  padding: 10rem 10rem 2rem;
   justify-content: space-between;
   position: relative;
   z-index: 1;
@@ -192,6 +192,7 @@ section {
 
 /* HOME SECTION STYLE */
 #Home {
+  /* background-image: url(./Image/bg_img-1.jpg); */
   background-color: var(--bg-color);
   align-items: center;
   display: flex;
@@ -409,41 +410,49 @@ p.about {
 }
 
 .service-box .service {
-  width: 40%;
-  max-width: 90%;
-  min-height: 100px;
-  padding: 0 2%;
+  height: auto;
+  width: max(300px,95%);
   background-color: var(--service-box);
   border: none;
   border-radius: 2rem;
+  overflow: hidden;
   text-align: center;
   margin: 1rem;
   transition: 0.5s ease;
   flex: 1;
 }
+.service-box .service div{
+  height: 35%;
+  padding: 0 2%;
+}
 
 .service-box .service:hover {
   border: 2px solid var(--sec-bg-color);
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .service-box .service h3 {
   color: var(--service-text1);
   font-size: 2.5rem;
-  margin: 1.5rem;
+  margin: 0.7rem;
 }
 
 .service-box .service i {
-  font-size: 3.5rem;
-  margin-top: 2rem;
+  font-size: 3rem;
+  margin-top: 1rem;
   color: var(--service-icon);
 }
 
 .service-box .service p {
   color: var(--service-text2);
   font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 1.2;
   padding: 1rem 1rem;
+}
+.service-box .service img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /*     PROJECT STYLE     */
@@ -464,7 +473,7 @@ p.about {
   flex-direction: column;
   align-items: center;
   margin: 1rem 0.5rem;
-  min-width: fit-content;
+  width: max(300px,95%);
   flex: 1;
 }
 .project-cont div {

@@ -40,6 +40,9 @@
     padding-bottom: 6rem;
     flex-direction: column;
   }
+  .home-text{
+    text-align: center;
+  }
   .home-text h1 {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -92,6 +95,13 @@
 
   .service-box .service {
     width: 90%;
+  }
+
+  .projects-container{
+    justify-content: center;
+  }
+  .project-cont div {
+    gap: 8rem;
   }
 
   .contact-form {
@@ -202,11 +212,21 @@
     font-size: 1.5rem;
     width: 10rem;
   }
+  .service-box .service h3{
+    font-size: 2rem;
+  }
+  .service-box .service p{
+    font-size: 1.2rem;
+  }
+  .service-box .service i{
+    font-size: 2rem;
+  }
+  
 
   iframe {
     border: none;
     height: 10rem;
-    width: 20rem;
+    max-width: fit-content;
     border-radius: 0.8rem;
   }
 
@@ -250,5 +270,44 @@
   }
   #footer .footer-contact p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .home img {
+    height: 200px;
+    position: relative;
+    top: 0;
+    border-radius: 50%;
+    margin: 0 3rem;
+  }
+  .wrapper .static-text {
+    font-size: 35px;
+  }
+  .dynamic-text{
+    height: 45px;
+  }
+ .dynamic-text li{
+    font-size: 40px;
+  }
+  @keyframes slide {
+    100% {
+      top: -195px;
+    }
+  }
+
+  p.about{
+    font-size: 1rem;
+  }
+  .service-box .service h3{
+    font-size: 1.6rem;
+    margin: 0.5rem;
+  }
+  .service-box .service p{
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .service-box .service i{
+    font-size: 1.5rem;
   }
 }
